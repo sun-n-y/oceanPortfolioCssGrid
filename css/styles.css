@@ -183,6 +183,7 @@ Navbar
 }
 
 .navbar {
+  height: 5rem;
   max-width: 1170px;
   padding: 1rem;
   margin: 0 auto;
@@ -202,6 +203,8 @@ Navbar
 
 .navbar-fixed {
   position: fixed;
+  box-shadow: var(--dark-shadow);
+  transition: var(--transition);
 }
 
 @media screen and (min-width: 768px) {
@@ -215,6 +218,7 @@ Navbar
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
+    transition: var(--transition);
   }
   .nav-link {
     list-style-type: none;
@@ -228,10 +232,6 @@ Navbar
   .nav-link:hover {
     color: var(--clr-primary-5);
   }
-}
-.y {
-  height: 150vh;
-  background: rebeccapurple;
 }
 /*
 =============== 
