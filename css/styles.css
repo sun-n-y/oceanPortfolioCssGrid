@@ -421,7 +421,7 @@ About
 }
 
 .about-img-container {
-  width: 17rem;
+  width: 25rem;
   margin: 0 auto;
 }
 
@@ -455,6 +455,10 @@ About
   }
   .about-img {
     border-radius: var(--radius);
+  }
+
+  .about-info {
+    align-self: center;
   }
 }
 
