@@ -187,6 +187,7 @@ Navbar
   background: var(--clr-white);
   height: 5rem;
   width: 100%;
+  z-index: 5;
 }
 
 .navbar {
