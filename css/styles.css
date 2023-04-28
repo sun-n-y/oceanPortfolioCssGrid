@@ -238,6 +238,75 @@ Navbar
 Sidebar
 ===============
 */
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: var(--clr-grey-10);
+  display: grid;
+  place-items: center;
+  transition: var(--transition);
+  transform: translateX(-100%);
+}
+
+.show-sidebar {
+  transform: translateX(0);
+}
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 3rem;
+  background: transparent;
+  border: none;
+  padding: 1.5rem;
+  color: rgba(255, 0, 0, 0.747);
+  transition: var(--transition);
+}
+
+.close-btn:hover {
+  color: rgba(255, 0, 0, 0.418);
+}
+
+.sidebar-content {
+  text-align: center;
+  display: grid;
+  row-gap: 4rem;
+}
+
+.sidebar-links a {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  transition: var(--transition);
+  color: var(--clr-grey-5);
+  display: inline-block;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.sidebar-links a:hover {
+  color: var(--clr-primary-5);
+}
+
+.social-icons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 2rem;
+}
+
+.social-icon {
+  font-size: 2.5rem;
+  color: #222;
+  transition: var(--transition);
+}
+
+.social-icon:hover {
+  color: var(--clr-primary-5);
+}
 
 /*
 =============== 
