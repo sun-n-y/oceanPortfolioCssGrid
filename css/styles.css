@@ -176,12 +176,13 @@ Navbar
   display: none;
 }
 
-nav {
+.nav {
   background: var(--clr-white);
   height: 5rem;
+  width: 100%;
 }
 
-.nav-bar {
+.navbar {
   max-width: 1170px;
   padding: 1rem;
   margin: 0 auto;
@@ -199,8 +200,12 @@ nav {
   cursor: pointer;
 }
 
+.navbar-fixed {
+  position: fixed;
+}
+
 @media screen and (min-width: 768px) {
-  nav {
+  .nav {
     background: var(--clr-primary-8);
   }
   .nav-btn {
@@ -224,7 +229,10 @@ nav {
     color: var(--clr-primary-5);
   }
 }
-
+.y {
+  height: 150vh;
+  background: rebeccapurple;
+}
 /*
 =============== 
 Sidebar
