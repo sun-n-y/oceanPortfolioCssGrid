@@ -173,6 +173,16 @@ p {
   background: var(--clr-primary-5);
 }
 
+.section-title h2 {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.section-title .underline {
+  display: block;
+  margin: 0.5rem auto;
+}
+
 /*
 =============== 
 Navbar
@@ -396,6 +406,57 @@ About
 ===============
 */
 /* section title added to globals */
+
+.about-title h2 {
+  text-align: left;
+}
+
+.about-title {
+  margin: 1.5rem 0;
+}
+
+.about-title .underline {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.about-img-container {
+  width: 17rem;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 992px) {
+  .about-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+  .about-img-container {
+    align-self: center;
+    position: relative;
+  }
+
+  .about-img-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0.5rem solid var(--clr-primary-5);
+    top: 2rem;
+    left: -2rem;
+    z-index: -1;
+    border-radius: var(--radius);
+  }
+
+  .about-title {
+    margin-top: 0;
+  }
+  .about-img {
+    border-radius: var(--radius);
+  }
+}
 
 /*
 =============== 
