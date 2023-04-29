@@ -470,6 +470,61 @@ Services
 /* small screen layout setup */
 /* bg-grey in globals */
 
+.services {
+  background: var(--clr-grey-10);
+}
+
+.service {
+  border-radius: var(--radius);
+  background: var(--clr-white);
+  padding: 3rem 2rem;
+  display: grid;
+  place-items: center;
+}
+
+.service-icon {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.service p:first-of-type {
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #222;
+  letter-spacing: var(--spacing);
+  margin-bottom: 0;
+}
+
+.service .underline {
+  margin: 1rem 0;
+  width: 3rem;
+  border-radius: var(--radius);
+}
+
+.service p:last-of-type {
+  text-align: center;
+}
+
+.services-center {
+  margin-top: 3rem;
+  display: grid;
+
+  row-gap: 2rem;
+}
+
+@media screen and (min-width: 676px) {
+  .services-center {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .services-center {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 /*
 =============== 
 Projects
