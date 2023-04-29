@@ -768,6 +768,39 @@ Timeline
 ===============
 */
 
+.timeline-center {
+  width: 80vw;
+  max-width: 40rem;
+  margin: 5rem auto 0 auto;
+}
+
+.time-year {
+  letter-spacing: var(--spacing);
+  color: #222;
+  font-weight: bold;
+}
+
+.timestamp {
+  padding: 2rem;
+  position: relative;
+  border-top: 2px dashed var(--clr-primary-5);
+}
+
+.timestamp:nth-of-type(even) {
+  border-left: 2px dashed var(--clr-primary-5);
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  margin-right: 2rem;
+  padding-right: 0;
+}
+.timestamp:nth-of-type(odd) {
+  border-right: 2px dashed var(--clr-primary-5);
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  margin-left: 2rem;
+  padding-left: 0;
+}
+
 /*
 =============== 
 Blog
