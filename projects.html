@@ -3,10 +3,100 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>products page</title>
+    <title>Ocean || Portfolio</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-6.4.0-web/css/all.min.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
-
   <body>
-    <h1>products page</h1>
+    <!-- navbar -->
+    <nav class="nav" id="nav">
+      <nav class="navbar">
+        <img src="./images/logo.svg" class="nav-logo" alt="" />
+        <!-- nav links -->
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">home</a></li>
+          <li><a href="projects.html" class="nav-link">projects</a></li>
+          <li><a href="about.html" class="nav-link">about</a></li>
+          <li><a href="contact.html" class="nav-link">contact</a></li>
+        </ul>
+        <button class="nav-btn" id="nav-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </nav>
+    <!-- end of navbar -->
+    <!-- sidebar -->
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-content">
+        <!-- sidebar links -->
+        <ul class="sidebar-links">
+          <li><a href="index.html" class="sidebar-link">home</a></li>
+          <li><a href="projects.html" class="sidebar-link">projects</a></li>
+          <li><a href="about.html" class="sidebar-link">about</a></li>
+          <li><a href="contact.html" class="sidebar-link">contact</a></li>
+        </ul>
+        <!-- social icons -->
+        <div class="social-icons">
+          <a href="https://www.facebook.com"
+            ><i class="fa-brands fa-facebook social-icon"></i
+          ></a>
+          <a href="https://www.fa-twitter.com"
+            ><i class="fa-brands fa-twitter social-icon"></i
+          ></a>
+          <a href="https://www.squarespace.com"
+            ><i class="fa-brands fa-squarespace social-icon"></i
+          ></a>
+          <a href="https://www.instagram.com"
+            ><i class="fa-brands fa-instagram social-icon"></i
+          ></a>
+          <a href="https://www.behance.com"
+            ><i class="fa-brands fa-behance social-icon"></i
+          ></a>
+        </div>
+      </div>
+      <button class="close-btn" id="close-btn">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <!-- end of sidebar -->
+    <!-- header -->
+    <header class="hero">
+      <div class="hero-content">
+        <!-- hero info -->
+        <article class="project-hero-info hero-info">
+          <h1>My Projects</h1>
+          <div class="underline"></div>
+        </article>
+      </div>
+    </header>
+    <footer class="section footer">
+      <!-- social icons -->
+      <div class="footer-icons social-icons">
+        <a href="https://www.facebook.com"
+          ><i class="fa-brands fa-facebook footer-icon social-icon"></i
+        ></a>
+        <a href="https://www.fa-twitter.com"
+          ><i class="fa-brands fa-twitter footer-icon social-icon"></i
+        ></a>
+        <a href="https://www.squarespace.com"
+          ><i class="fa-brands fa-squarespace footer-icon social-icon"></i
+        ></a>
+        <a href="https://www.instagram.com"
+          ><i class="fa-brands fa-instagram footer-icon social-icon"></i
+        ></a>
+        <a href="https://www.behance.com"
+          ><i class="fa-brands fa-behance footer-icon social-icon"></i
+        ></a>
+      </div>
+      <p>&copy; <span id="date"></span> S P. all rights reserved.</p>
+    </footer>
+    <script src="./js/app.js"></script>
   </body>
 </html>
