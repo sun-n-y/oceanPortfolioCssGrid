@@ -801,6 +801,33 @@ Timeline
   padding-left: 0;
 }
 
+.timestamp:nth-child(odd) .number {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  background: var(--clr-primary-5);
+  border-radius: 50%;
+  color: var(--clr-white);
+  right: 0;
+  top: 50%;
+  transform: translateX(50%);
+}
+.timestamp:nth-child(even) .number {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  background: var(--clr-primary-5);
+  border-radius: 50%;
+  color: var(--clr-white);
+  left: 0;
+  top: 50%;
+  transform: translateX(-50%);
+}
+
 /*
 =============== 
 Blog
