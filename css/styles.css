@@ -970,12 +970,6 @@ Footer
 
 /*
 =============== 
-Single Page
-===============
-*/
-
-/*
-=============== 
 Projects Page
 ===============
 */
@@ -1042,4 +1036,29 @@ Projects Page
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 400px));
   gap: 1rem;
+}
+
+/*
+=============== 
+about us
+===============
+*/
+.about-hero {
+  height: calc(100vh - 5rem - 13rem);
+  background: var(--clr-primary-10);
+  display: grid;
+  place-items: center;
+}
+
+.about-hero-content {
+  width: 50vw;
+  text-align: center;
+}
+
+.about-hero-info p {
+  margin-top: 2rem;
+  max-width: 70%;
+  text-align: left;
+  margin-right: auto;
+  margin-left: auto;
 }
