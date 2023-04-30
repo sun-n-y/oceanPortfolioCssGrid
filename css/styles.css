@@ -950,7 +950,8 @@ Footer
   background: #222;
   display: grid;
   place-items: center;
-  row-gap: 2rem;
+  row-gap: 1.5rem;
+  height: 13rem;
 }
 
 .footer-icon {
@@ -964,6 +965,7 @@ Footer
 .footer p {
   color: var(--clr-grey-7);
   font-size: 1.09rem;
+  margin-bottom: 0;
 }
 
 /*
@@ -974,6 +976,20 @@ Single Page
 
 /*
 =============== 
-Products Page
+Projects Page
 ===============
 */
+
+.project-hero {
+  height: calc(65vh - 5rem - 13rem);
+  display: grid;
+  place-items: center;
+}
+
+.project-hero-info .underline {
+  width: 40%;
+}
+
+.project-hero-info {
+  text-align: center;
+}
