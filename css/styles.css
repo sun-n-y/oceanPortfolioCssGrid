@@ -830,6 +830,10 @@ Timeline
 
 .timestamp:first-of-type {
   border-top: none;
+  border-top-right-radius: 0;
+}
+.timestamp:last-of-type {
+  border-bottom-left-radius: 0;
 }
 
 /*
