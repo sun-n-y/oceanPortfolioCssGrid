@@ -993,3 +993,53 @@ Projects Page
 .project-hero-info {
   text-align: center;
 }
+
+.my-project-card {
+  background: var(--clr-grey-10);
+  border-radius: var(--radius);
+  position: relative;
+}
+
+.my-project-img {
+  height: 15rem;
+  object-fit: cover;
+  border-top-right-radius: var(--radius);
+  border-top-left-radius: var(--radius);
+}
+
+.my-project-icon {
+  position: absolute;
+  height: 3rem;
+  width: 3rem;
+  background: var(--clr-primary-5);
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 3px solid var(--clr-grey-10);
+  top: 14rem;
+  left: 45%;
+}
+
+.my-project-info {
+  padding: 2rem 1rem 1rem 1rem;
+}
+
+.my-project-footer {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  place-items: center;
+  color: var(--clr-primary-5);
+}
+
+.my-project-footer a {
+  justify-self: end;
+  text-transform: capitalize;
+  color: var(--clr-primary-5);
+}
+
+.my-projects-center {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 400px));
+  gap: 1rem;
+}
