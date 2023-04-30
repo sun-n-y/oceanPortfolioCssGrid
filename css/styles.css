@@ -812,7 +812,7 @@ Timeline
   color: var(--clr-white);
   right: 0;
   top: 50%;
-  transform: translateX(50%);
+  transform: translate(50%, -50%);
 }
 .timestamp:nth-child(even) .number {
   position: absolute;
@@ -825,7 +825,11 @@ Timeline
   color: var(--clr-white);
   left: 0;
   top: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
+}
+
+.timestamp:first-of-type {
+  border-top: none;
 }
 
 /*
